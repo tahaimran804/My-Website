@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+body{
+  background-color: whitesmoke;
+}
+
+.navbar-brand {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-link{
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal
+}
+
+.nav-link:hover {
+  transition-duration: 0.5s;
+  color: coral !important;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar-brand:hover {
+  transition-duration: 0.5s;
+  color: coral !important;
+}
+
+.menu_active {
+  color: red !important;
+}
+.navbar-toggler-icon{
+  color: #fff !important;
+}
+
+
+.section-1 {
+  width: 100%;
+  height: 76vh;
+}
+
+.main_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  padding: 100px 0px 0px;
+}
+
+.Image img{
+  width: 500px;
+  height: auto;
+  animation: upDown 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes upDown{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes upDown{
+  0%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(10px);
+  }
+}
+
+.text{
+  display: flex;
+  align-items: start;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.text h1{
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 50px !important;
+}
+
+.text h3{
+  font-size: 18px !important;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.bnt-get-started{
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: coral;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border: 1px solid coral;
+  text-decoration: none;
+}
+
+.bnt-get-started:hover{
+  transition-duration: 0.5s;
+  border: 1px solid coral;
+  color: coral;
+  background-color: transparent;
+}
+
+.btn{
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: coral;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border: 1px solid coral;
+  text-decoration: none;
+}
+
+.all_cards{
+  display: flex;
+  grid-column: 3;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media(max-width:1000px){
+  .main_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 0px 0px;
+    width: 100% !important;
+  
+  }
+  .section-1 {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  footer{
+    margin: 0px !important;
+  }
+
+  .text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.Image img{
+  width: 100% !important;
+  height: auto !important;
+}
+  
+}
+
+@media(max-width:400px){
+  .text h1{
+    font-size: 38px !important;
+  }
+}
+
+@media(max-width:800px){
+  .card{
+    width: 100% !important;
+  }
+  
+}
